@@ -36,6 +36,10 @@ containing a list of FishBowl team scores (in order of team number):
 Use the following code to receive a response message from the
 Scoreboard microservice:
 
+NOTE: The socket MUST receive a response from the response socket
+(i.e., the Scoreboard microservice) before it continues execution
+to return it to the appropriate state.
+
     # Save response message to a variable
     # MUST use .recv_string() method
 
